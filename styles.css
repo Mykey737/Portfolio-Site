@@ -1,3 +1,8 @@
+:root {
+    --main-color1:  rgb(42, 115, 188);
+    --main-color2: darkgray;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
   }
@@ -16,7 +21,7 @@
   /* NAVBAR */
 
   nav {  
-    background-color: rgb(42, 115, 188);
+    background-color: var(--main-color1);
     margin: 0;
     width: 100vw;
   }
@@ -50,9 +55,8 @@
     padding-top: 6rem;
     height: 100vh;
     text-align: center;
-    color: rgb(42, 115, 188);
-    background-color: darkgray;
-    border: red 1px solid;
+    color: var(--main-color1);
+    background-color: var(--main-color2);
   }
   
   #welcome-section h1 {
@@ -89,9 +93,22 @@
   /* PROJECTS */
   
   #projects {
-    background: linear-gradient(rgba(42, 115, 188, 0.6), white);
-    height: 100vh;
-    border: blue 1px solid;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project {
+    width: 49%;
+    max-height: 42rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    
+  }
+
+  #projects h2 {
+    background: linear-gradient(rgba(42, 115, 188, 0.7), white);
+    padding-bottom: .7em;
   }
   
   .projects-wrapper {
@@ -101,4 +118,55 @@
     flex-wrap: wrap;
   }
 
+  .project-tile {
+    border: 2px solid var(--main-color1);
+  }
+
+  .heading {
+    padding-bottom: 1rem;
+    font-weight: bold;
+    background-color: var(--main-color2);
+    padding-top: 1rem;
+    border-bottom: 2px solid var(--main-color1);
+    color: white;
+  }
+
+  .project-image {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .project-info {
+    border-top: 2px solid var(--main-color1);
+    height: 15rem;
+  }
+
+  .project-info a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color1)
+  }
+
+  .project-info a:hover {
+    color: var(--main-color2)
+  }
+
+ .project-tile, .project p {
+    text-align: center;
+  } 
+
+  .description {
+    text-align: left;
+    padding: 0 .75rem;
+  }
+
   /* CONTACT */
+
+  #profile-links li {
+    list-style: none;
+  }
+
+  .fa-brands {
+    color: var(--main-color1);
+  }
