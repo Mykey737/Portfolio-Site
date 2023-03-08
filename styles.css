@@ -1,6 +1,7 @@
 :root {
-    --main-color1:  rgb(42, 115, 188);
+    --main-color1: rgb(42, 115, 188);
     --main-color2: darkgray;
+    --main-color3: white;
 }
 
 *, ::before, ::after {
@@ -45,7 +46,7 @@
   #navbar li a {
     text-decoration: none;
     font-size: 24px;
-    color: white;
+    color: var(--main-color3);
   
   }
 
@@ -88,6 +89,12 @@
   #about {
     height: auto;
     max-height: 90rem;
+    background-image: url("images/about-background6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 0;
   }
 
   /* PROJECTS */
@@ -96,26 +103,27 @@
     height: auto;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 6rem;
+    padding-top: 0;
   }
 
-  .project {
-    width: 49%;
-    max-height: 42rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
-    
-  }
-
-  #projects h2 {
-    background: linear-gradient(rgba(42, 115, 188, 0.7), white);
-    padding-bottom: .7em;
-  }
-  
   .projects-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+
+  .project {
+    width: 49%;
+    max-height: 44rem;
+    margin-top: 0;
+  }
+
+  #projects h2 {
+    background: linear-gradient(rgba(42, 115, 188, 0.7), var(--main-color3));
+    padding-top: 4.5rem;
+    margin-top: 0;
   }
 
   .project-tile {
@@ -128,7 +136,7 @@
     background-color: var(--main-color2);
     padding-top: 1rem;
     border-bottom: 2px solid var(--main-color1);
-    color: white;
+    color: var(--main-color3);
   }
 
   .project-image {
@@ -140,6 +148,7 @@
   .project-info {
     border-top: 2px solid var(--main-color1);
     height: 15rem;
+    margin-bottom: 2rem;
   }
 
   .project-info a {
@@ -163,10 +172,84 @@
 
   /* CONTACT */
 
-  #profile-links li {
-    list-style: none;
+  #contact {
+    background-color: var(--main-color2);
   }
 
-  .fa-brands {
-    color: var(--main-color1);
+  #contact h2 {
+    font-size: 3rem;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
   }
+  
+  #profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #profile-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  #profile-links i {
+    font-size: 3rem;
+  }
+
+  #profile-links a {
+    text-decoration: none;
+    color: var(--main-color1);
+    font-weight: 500;
+  }
+
+  #profile-links a:hover {
+    color: var(--main-color3);
+  }  
+
+  /* FORM */
+
+  #form {
+    margin: auto;
+    width: 40%;
+    padding-bottom: 2rem;
+  }
+
+  input, textarea {
+    display: block;
+    margin: .5rem 0;
+    padding: .25rem;
+    width: 100%;
+  }
+
+  label {
+    margin: 0;
+    padding: 0;
+  }
+
+ fieldset {
+    border: none;
+  }
+
+  #submit {
+    font-size: 1rem;
+    padding: .25rem;
+    width: 5rem;
+    margin-left: 1.1rem;
+  }
+
+
+  /* FOOTER */
+
+  footer {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: var(--main-color2);
+    color: var(--main-color1);
+    border-top: 5px solid var(--main-color1);
+    padding: 2rem;
+  }
+

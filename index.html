@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="device" content="width=device-width, initial-scale=1.0">
     <title>Mike Pena's Portfolio Webpage</title>
-    <link rel="stylesheet" href="https://kit.fontawesome.com/b09055f164.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -107,17 +107,35 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="content"><h2>Let's Work Together</h2>
+        <section id="contact" class="content"><h2>Let's Work Together...</h2>
             <div id="profile-links">
                 <ul>
-                    <li><a id="profile-link" href="https://github.com/mykey737" target="_blank"><i class="fa-brands fa-github"></i><br />GitHub</a></li>
-                    <li><a id="profile-link-2" href="https://www.freecodecamp.org/Mykey737" target="_blank"><i class="fa-brands fa-free-code-camp"></i><br />freeCodeCamp Profile</a></li>
-                    <li><a id="profile-link-2" href="http://linkedin.com/in/michael-pena-626111267" target="_blank">LinkedIn</a></li>
-                    <li><a href="mailto: mykey737@gmail.com">Email me</a></li>
-                    <li><a href="tel:3058151515">Call me</a></li>
+                    <li><a id="profile-link" href="https://github.com/mykey737" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a id="profile-link-2" href="https://www.freecodecamp.org/Mykey737" target="_blank"><i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a></li>
+                    <li><a id="profile-link-3" href="http://linkedin.com/in/michael-pena-626111267" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a id="profile-link-4" href="https://www.facebook.com/mykey737" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a id="profile-link-5" href="mailto: mykey737@gmail.com"><i class="fa-solid fa-envelope"></i> Email me</a></li>
+                    <li><a id="profile-link-6" href="tel:3058151515"><i class="fa-solid fa-phone"></i> Call me</a></li>
                 </ul>
+            </div>
+            <div id="form">
+                <form method="post" action="mailto:mykey737@gmail.com">
+                    <fieldset>
+                        <legend><h3>Contact Me</h3></legend>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+                        <label for="details">Project details</label>
+                        <textarea id="details" name="details" rows="5"></textarea>
+                    </fieldset>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
             </div>
         </section>
       </main>
+      <footer>
+        ©2023 Mike Peña Web Development
+      </footer>
   </body>
 </html>
