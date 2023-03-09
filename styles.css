@@ -88,7 +88,8 @@
   
   #about {
     height: auto;
-    max-height: 90rem;
+    min-height: 100vh;
+    font-size: 1.12rem;
     background-image: url("images/about-background6.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -97,13 +98,17 @@
     margin-bottom: 0;
   }
 
+  #about p {
+    font-size: 1.3rem;
+  }
+
   /* PROJECTS */
   
   #projects {
     height: auto;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     padding-top: 0;
   }
 
@@ -112,6 +117,8 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 2rem 0;
+    height: 97rem;
   }
 
   .project {
@@ -128,6 +135,10 @@
 
   .project-tile {
     border: 2px solid var(--main-color1);
+    padding: 0;
+    height: auto;
+    max-height:45rem;
+    margin-bottom: 1.5rem;
   }
 
   .heading {
@@ -147,8 +158,8 @@
 
   .project-info {
     border-top: 2px solid var(--main-color1);
-    height: 15rem;
-    margin-bottom: 2rem;
+    height: auto;
+    min-height: 13rem;
   }
 
   .project-info a {
