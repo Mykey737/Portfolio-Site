@@ -61,7 +61,7 @@
   }
   
   #welcome-section h1 {
-    color: #fff;
+    color: var(--main-color3);
     padding-top: 10rem;
     font-size: 3.7rem;
     padding-bottom: 0;
@@ -99,7 +99,7 @@
   }
 
   #about p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   /* PROJECTS */
@@ -108,8 +108,9 @@
     height: auto;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     padding-top: 0;
+    border: 1px solid purple;
   }
 
   .projects-wrapper {
@@ -117,19 +118,23 @@
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 2rem 0;
-    height: 97rem;
+    padding: 1rem 0;
+    height: auto;
+    max-height: 85rem;
+    border: 1px solid red;
   }
 
   .project {
     width: 49%;
-    max-height: 44rem;
+    max-height: 40rem;
     margin-top: 0;
+    margin-bottom: 5rem;;
+    border: 1px solid yellow;
   }
 
   #projects h2 {
     background: linear-gradient(rgba(42, 115, 188, 0.7), var(--main-color3));
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
     margin-top: 0;
   }
 
@@ -137,7 +142,7 @@
     border: 2px solid var(--main-color1);
     padding: 0;
     height: auto;
-    max-height:45rem;
+    max-height: 45rem;
     margin-bottom: 1.5rem;
   }
 
@@ -179,12 +184,15 @@
   .description {
     text-align: left;
     padding: 0 .75rem;
+    border: 1px solid green;
   }
 
   /* CONTACT */
 
   #contact {
     background-color: var(--main-color2);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #contact h2 {
@@ -196,14 +204,17 @@
   #profile-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
+    padding: 0;
   }
-
-  #profile-links li {
+  
+  #profile-links div {
     list-style: none;
-    display: inline-block;
-    padding: 0 1rem;
+    display: inline;
+    width: auto;
+    padding: 0 1.5rem;
     text-align: center;
   }
 
@@ -262,5 +273,103 @@
     color: var(--main-color1);
     border-top: 5px solid var(--main-color1);
     padding: 2rem;
+  }
+
+  
+
+  @media (max-width: 820px) {
+    
+    .projects-wrapper {
+      padding: 1rem 0;
+      height: 75rem;
+      border: 1px solid red;
+    }
+    
+    .project {
+      max-height: 40rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    #profile-links div {
+      list-style: none;
+      display: inline;
+      width: 32%;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    #form {
+      margin: auto;
+      width: 60%;
+      padding-bottom: 2rem;
+    }
+    
+  }
+
+  @media (max-width: 608px) {
+
+    .heading {
+      font-size: 90%;
+    }
+
+  }
+
+  @media (max-width: 590px) {
+
+    #navbar {
+      padding-right: 0;
+    }
+    
+    #welcome-section h1 {
+      width:75%;
+      margin: auto;
+      font-size: 2.5rem;
+      padding-top: 15rem;
+    } 
+
+    #welcome-section p {
+      font-size: 1.3rem;
+    }
+
+    .projects-wrapper {
+      height: 170rem;
+      max-height: 200rem;
+      display: block;
+      border: 1px solid red;
+    }
+
+    #projects {
+      height:  182rem;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 5rem;
+      padding-top: 0;
+      border: 1px solid purple;
+    }
+
+    .project {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 3rem;;
+      border: 1px solid yellow;
+    }
+
+    #contact h2 {
+      width: 85%;
+      margin: auto;
+      padding-bottom: 2rem;
+    }
+
+    #profile-links i {
+      font-size: 2rem;
+    }
+
+    #form {
+      margin: auto;
+      width: 75%;
+      padding-bottom: 2rem;
+    }
+
   }
 
